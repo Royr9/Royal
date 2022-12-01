@@ -9,9 +9,6 @@ const app = express();
 // instead of body-parser
 app.use(express.urlencoded());
 
-app.get('/', (req, res) => {
-  res.sendStatus(200)
-})
 
 // uploading our static files
 app.use(express.static("public"));
